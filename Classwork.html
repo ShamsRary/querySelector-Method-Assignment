@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+        <head>
+                <!-- this is my comment -->
+                <title>Shams's Code Breaker</title>
+                <style></style>
+        </head>
+  
+        <body>
+			<h1>The Document Object</h1>
+            <h2>The querySelector() Method</h2>
+            <p class="example">I am a paragraph.</p>
+            <p class="example">I am a paragraph.</p> 
+            <p class="example">I am a paragraph.</p> 
+            <p class="example">I am a paragraph.</p> 
+            <p class="example">I am a paragraph.</p> 
+            <p class="example">I am a paragraph.</p> 
+            <button onclick = "clickResponse();">Click Me!</button>
+
+        </body>
+
+        <script>
+ 
+            document.querySelector(".example").style.backgroundColor = "red"; 
+            
+            function clickResponse(){
+
+                        const nodeList = document.querySelectorAll(".example");
+                        for (let i = 0; i < nodeList.length; i++) {
+                            nodeList[i].style.backgroundColor = "red";
+                        }
+                        document.querySelector(".example").style.backgroundColor = "green"; 
+                    }
+                    
+                   
+        </script>
+</html>
+
